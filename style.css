@@ -5,7 +5,6 @@
   font-style: normal;
 }
 
-
 .raleway {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
@@ -22,12 +21,20 @@
 }
 
 /* Body */
-body {
+hmtl, body {
+  margin: 0;
+  padding: 0;
   max-height: 100%;
   display: flex;
   flex-direction: column;
   background-color: #FFFFF2;
 }
+
+a {
+  text-decoration: none;
+  color: #9A1B0F;
+}
+
 
 h1 {
   font-family: "Poetsen One";
@@ -37,8 +44,7 @@ h2 {
   font-family: "Poetsen One";
 }
 
-p, h3, h4, h5, h6 {
-  /* display: flex; */
+p, h3, h4, h5, h6, a {
   font-family: "Raleway";
 }
 
@@ -349,6 +355,43 @@ button[type="submit"] {
 #icon-group i {
   margin: 1em 1.5em;
 }
+
+/* Lists */
+.list-group {
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF0CB;
+  border: #291B16;
+  border-style: solid;
+  border-width: 1px;
+  border-radius: .5em;
+  border-top-right-radius: 3em;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 1px 2px 0 0 #291B16;
+}
+
+.list-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0em 2em;
+}
+
+.list-group-item p {
+  margin: 1em 2em;
+  max-width: 30em;
+}
+
+.list-group:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 #291B16;
+}
+
+.list-group:active {
+  transform: translateY(2px) translateX(1px);
+  box-shadow: 0 0 0 0 #291B16;
+}
+
 
 /* Cards */
 .cards {
