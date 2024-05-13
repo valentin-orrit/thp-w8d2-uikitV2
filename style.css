@@ -1,5 +1,4 @@
 /* Fonts */
-
 .poetsen-one-regular {
   font-family: "Poetsen One", sans-serif;
   font-weight: 400;
@@ -14,7 +13,6 @@
 }
 
 /* Body  */
-
 body {
   max-height: 100%;
   display: flex;
@@ -29,15 +27,19 @@ h1 {
 
 h2 {
   font-family: "Poetsen One";
-  color: #291B16;
+  color: #6E331D;
 }
 
 p, h3, h4 {
+  /* display: flex; */
   font-family: "Raleway";
 }
 
 footer {
-  align-items: end;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
   font-family: "Raleway";
   font-weight: 200;
   background-color: #291B16;
@@ -50,7 +52,7 @@ footer {
   justify-items: center;
   align-items: center;
   margin: auto;
-  padding: 1em 2em;
+  padding: 0.5em 1em;
 }
 
 .inline {
@@ -64,6 +66,7 @@ footer {
   margin-left: 4em;
 }
 
+/* Cards */
 .cards {
   display: flex;
   flex-direction: row;
@@ -87,6 +90,8 @@ footer {
 
 .card footer {
   padding: 0.5em;
+  background-color: #291B16;
+  color: #FFFFF2;
 }
 
 .card img {
@@ -95,30 +100,141 @@ footer {
   height: 100%;
 }
 
-.primary-color-1 {
+/* Colors */
+.bg-primary-1 {
   background-color: #9A1B0F;
 }
 
-.primary-color-2 {
+.bg-primary-2 {
   background-color: #6E331D ;
 }
 
-.primary-color-3 {
+.bg-primary-3 {
   background-color: #B86E47;
 }
 
-.secondary-color-1 {
+.bg-secondary-1 {
   background-color: #FFE7B0;
 }
 
-.secondary-color-2 {
+.bg-secondary-2 {
   background-color: #FFF0CB;
 }
 
-.white {
+.bg-white {
   background-color: #FFFFF2;
 }
 
-.black {
+.bg-black {
   background-color: #291B16;
 }
+
+/* text colors */
+
+.white {
+  color: #FFFFF2;
+}
+
+.black {
+  color: #291B16;
+}
+
+/* typo */
+#typography-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+
+/* Buttons */
+
+.primary-button {
+  background-color: #9A1B0F;
+  color: #FFFFF2;
+  
+}
+.secondary-button {
+  background-color: #FFE7B0;
+  color: #291B16;
+  font-weight: 600;
+}
+
+.success {
+  background-color: #afff84;
+}
+
+.danger {
+  background-color: #F52413;
+  color: #FFFFF2;
+}
+
+.warning {
+  background-color: #F5C413;
+}
+
+.info {
+  background-color: #b9eef5;
+}
+
+button {
+
+  padding: 1em 1.5em;
+  font-family: "Raleway";
+  height: 4em;
+  border-radius: 9%;
+  /* border-top-right-radius: 15% 30%; */
+  font-weight: 600;
+  cursor: pointer;
+  border: 1px solid #291B16;
+  box-shadow: 1px 2px 0 0 #291B16;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  transform: translateY(-4px) translateX(-2px);
+  box-shadow: 2px 5px 0 0 #291B16;
+}
+
+button:active {
+  transform: translateY(2px) translateX(1px);
+  box-shadow: 0 0 0 0 #291B16;
+}
+
+/* Forms */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  margin-bottom: 1.5em;
+}
+
+.input-text {
+  min-width: 20em;
+  padding: 0.5em;
+  font-family: "Raleway", sans-serif;
+  font-weight: 300;
+  font-size: 1em;
+  border: 1px solid #291B16;
+  border-radius: 0.5em;
+}
+
+.input-text:focus {
+  outline: none;
+  border-color: #9A1B0F;
+}
+
+label {
+  font-family: "Poetsen One", sans-serif;
+  color: #6E331D;
+  margin-bottom: 0.5em;
+}
+
+button[type="submit"] {
+  margin-top: 1em;
+}
+
+/* Iconography */
