@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">    
     <title>UI KIT Coppa & Gabana</title>
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon-coppagabana.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!--Font h1-->
@@ -22,12 +23,12 @@
 
 <body>
     <div class="center" id="title">
-        <h1>Coppa & Gabana UI-kit</h1>
+        <h1 class="primary-1">Coppa & Gabana UI-kit</h1>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
     </div>
     
     <div class="center" id="colors">
-        <h2>Colors</h2>
+        <h2 class="primary-2">Colors</h2>
 
         <div class="cards">
             <div class="card bg-primary-1">
@@ -37,10 +38,6 @@
             <div class="card bg-primary-2">
                 <p></p><br>
                 <footer>primary color 2</footer>
-            </div>
-            <div class="card bg-primary-3">
-                <p></p><br>
-                <footer>primary color 3</footer>
             </div>
             <div class="card bg-secondary-1">
                 <p></p><br>
@@ -64,34 +61,89 @@
     <h2 class="center black">...</h2>
 
     <div class="center" id="typography">
-        <h2>Typography</h2>
-        <div id="typography-group">
-            <div class="inline">
-                <h1>Heading 1</h1>
-                <p>Poetsen One Regular / Font weight: 400</p>
+        <h2 class="primary-2">Typography</h2>
+        <div id="typography-group" class="grid-container">
+            <div class="grid-item">
+                <div class="left">
+                    <h1>Heading 1</h1>
+                </div>
+                <div class="right">
+                    <p class="raleway-small"><i>Poetsen One Regular</i>, Font weight: 400</p>
+                </div>
+            </div>
+    
+            <div class="grid-item">
+                <div class="left">
+                    <h2>Heading 2</h2>
+                </div>
+                <div class="right">
+                    <p class="raleway-small"><i>Poetsen One Regular</i>, Font weight: 400</p>
+                </div>
+            </div>
+    
+            <div class="grid-item">
+                <div class="left">
+                    <h3>Heading 3</h3>
+                </div>
+                <div class="right">
+                    <p class="raleway-small"><i>Raleway</i>, Font weight: 300</p>
+                </div>
             </div>
 
-            <div class="inline">
-                <h2>Heading 2</h2>
-                <p>Poetsen One Regular / Font weight: 400</p>
+            <div class="grid-item">
+                <div class="left">
+                    <h4>Heading 4</h4>
+                </div>
+                <div class="right">
+                    <p class="raleway-small"><i>Raleway</i>, Font weight: 300</p>
+                </div>
             </div>
 
-            <div class="inline">
-                <h3>Heading 3</h3>
-                <p>Raleway / Font weight: 300</p>
+            <div class="grid-item">
+                <div class="left">
+                    <h5>Heading 5</h5>
+                </div>
+                <div class="right">
+                    <p class="raleway-small"><i>Raleway</i>, Font weight: 300</p>
+                </div>
             </div>
 
-            <div class="inline">
-                <p>paragraph</p>
-                <p>Raleway / Font weight: 300</p>
+            <div class="grid-item">
+                <div class="left">
+                    <h6>Heading 6</h6>
+                </div>
+                <div class="right">
+                    <p class="raleway-small"><i>Raleway</i>, Font weight: 300</p>
+                </div>
+            </div>
+    
+            <div class="grid-item">
+                <div class="left">
+                    <p>Paragraph</p>
+                </div>
+                <div class="right">
+                    <p class="raleway-small"><i>Raleway</i>, Font weight: 300</p>
+                </div>
+            </div>
+            
+            <div class="grid-item">
+                <div class="left">
+                    <p class="raleway-small">small text</p>
+                </div>
+                <div class="right">
+                    <p class="raleway-small"><i>Raleway</i>, Font weight: 300</p>
+                </div>
             </div>
         </div>
     </div>
     
+    
     <h2 class="center black">...</h2>
 
     <div class="center" id="buttons">
-        <h2>Buttons</h2>
+        <h2 class="primary-2">Buttons</h2>
+
+        <h3>normal buttons</h3>
         <div id="button-group">
             <button class="primary-button">Primary</button>
             <button class="secondary-button">Secondary</button>
@@ -100,37 +152,34 @@
             <button class="warning">Warning</button>
             <button class="info">Info</button>
         </div>
-    </div>
 
-    <h2 class="center black">...</h2>
+        <h3>outline buttons</h3>
+        <div id="button-group">
+            <button class="outline outline-primary">Primary</button>
+            <button class="outline outline-secondary">Secondary</button>
+            <button class="outline outline-success">Success</button>
+            <button class="outline outline-danger">Danger</button>
+            <button class="outline outline-warning">Warning</button>
+            <button class="outline outline-info">Info</button>
+        </div>
+        
+        <h3>large buttons</h3>
+        <div id="button-group">
+            <button class="primary-button lg">Primary</button>
+            <button class="secondary-button lg">Secondary</button>
+        </div>
 
-    <div class="center" id="forms">
-        <h2>Forms</h2>
-        <div class="center bg-secondary-1">
-            <h1>The Form</h1>
-            <form class="form">
-              <div class="form-group">
-                <label for="name">Name:</label><br>
-                <input type="text" id="name" name="name" class="input-text">
-              </div>
-              <div class="form-group">
-                <label for="email">Email:</label><br>
-                <input type="email" id="email" name="email" class="input-text">
-              </div>
-              <div class="form-group">
-                <label for="message">Message:</label><br>
-                <textarea id="message" name="message" class="input-text"></textarea>
-              </div>
-              <button type="submit" class="primary-button"><i class="fa-solid fa-paper-plane"></i> Send</i></button>
-            </form>
-          </div>
-
+        <h3>small buttons</h3>
+        <div id="button-group">
+            <button class="primary-button sm">Primary</button>
+            <button class="secondary-button sm">Secondary</button>
+        </div>
     </div>
 
     <h2 class="center black">...</h2>
 
     <div class="center" id="icons">
-        <h2>Icons</h2>
+        <h2 class="primary-2">Icons</h2>
         <div id="icon-group">
             <i class="fa-solid fa-house black"></i>
             <i class="fa-solid fa-user black"></i>
@@ -139,13 +188,59 @@
             <i class="fa-solid fa-truck black"></i>
             <i class="fa-solid fa-paper-plane black"></i>
         </div>
+    </div>
+
+    <h2 class="center black">...</h2>
+
+    <div class="center" id="forms">
+        <h2 class="primary-2">Forms</h2>
+        <div class="center bg-secondary-2" id="outer-form">
+            <h1 class="primary-1">The Form</h1>
+            <form class="form">
+                <div class="form-group">
+                    <label for="name">Name:</label><br>
+                    <input type="text" id="name" name="name" class="input-text">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label><br>
+                    <input type="email" id="email" name="email" class="input-text">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label><br>
+                    <textarea id="message" name="message" class="input-text"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="category">Category:</label><br>
+                    <select id="category" name="category" class="input-text">
+                        <option value="option1">Option 1</option>
+                        <option value="option2">Option 2</option>
+                        <option value="option3">Option 3</option>
+                    </select>
+                </div>
+                <button type="submit" class="primary-button"><i class="fa-solid fa-paper-plane"></i> Send</i></button>
+            </form>
+          </div>
+
+    </div>
+
+    <h2 class="center black">...</h2>
+
+    <div class="center" id="lists">
+        <h2 class="primary-2">Lists</h2>
+
+    </div>
+
+    <h2 class="center black">...</h2>
+
+    <div class="center" id="cards">
+        <h2 class="primary-2">Cards</h2>
 
     </div>
 
     <h2 class="center black">...</h2>
     
     <div class="center">
-        <h2>That's it!</h2>
+        <h2 class="primary-2">That's it!</h2>
     </div>
 
     <footer>
