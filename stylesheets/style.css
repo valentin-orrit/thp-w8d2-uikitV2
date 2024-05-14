@@ -25,9 +25,14 @@ hmtl, body {
   margin: 0;
   padding: 0;
   height: 100%;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   background-color: #FFFFF2;
+}
+
+main {
+  flex-grow: 1;
 }
 
 a {
@@ -131,7 +136,6 @@ nav a {
   font-weight: 200;
   background-color: #291B16;
   color: #FFFFF2;
-  margin-top: auto;
 }
 
 .footer-bottom {
@@ -560,4 +564,5 @@ button[type="submit"] {
 /* menu */
 #menu a button{
   width: 20em;
+  margin: 1em 0;
 }
