@@ -21,7 +21,7 @@
 }
 
 /* Body */
-hmtl, body {
+html, body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -565,4 +565,25 @@ button[type="submit"] {
 #menu a button{
   width: 20em;
   margin: 1em 0;
+}
+
+
+/* product */
+#product {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#product-image {
+
+}
+
+#product-text {
+  width: 20em;
+  padding-left: 2em;
+}
+
+#description {
+  margin: 1em;
 }
