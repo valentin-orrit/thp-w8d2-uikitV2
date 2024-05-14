@@ -101,7 +101,7 @@ nav a {
   padding: 0 1em;
 }
 
-/* hero */
+/* banner */
 .hero-image-lg {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),url('../assets/img/coppagabana_banner.webp');
   height: 17em;
@@ -572,11 +572,11 @@ button[type="submit"] {
 #product {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: start;
+  padding: 2em 1em;
 }
 
 #product-image {
-
 }
 
 #product-text {
@@ -585,5 +585,6 @@ button[type="submit"] {
 }
 
 #description {
-  margin: 1em;
+  width: 80%;
+
 }
