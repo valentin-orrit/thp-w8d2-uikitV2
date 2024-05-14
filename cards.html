@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">    
+    <title>UI KIT Coppa & Gabana</title>
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon-coppagabana.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Font h1-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+
+    <!-- Font Everything Else-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://kit.fontawesome.com/b553ddee60.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+  
+
+
+<body>
+    <!--Navigation bar-->
+    <div id="nav"></div>
+    <script>
+    $(function(){
+      $("#nav").load("nav.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+
+    <main>
+        <div class="center" id="cards">
+            <h2 class="primary-2">Cards</h2><br>
+            <div class="cards">
+                <div class="card bg-secondary-2">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                </div>
+                
+                <div class="card bg-secondary-2">
+                    <h3>Card number 1</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <footer>Card footer</footer>
+                </div>
+
+                <div class="card bg-secondary-2">
+                    <h3>Card number 2</h3>
+                    <img src="assets/img/coppa-illustration.jpg">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                    <footer>Card footer</footer>
+                </div>
+    
+                <div class="card bg-secondary-2">
+                    <h3>Card number 3</h3>
+                    <img src="assets/img/coppagabana_banner.webp">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    <button class="primary-button">Primary</button>
+                    <footer>Card footer</footer>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--Footer-->
+    <div id="footer"></div>
+    <script>
+    $(function(){
+      $("#footer").load("footer.html");
+    });
+    </script>
+    <!--end of Footer-->
+</body>
+</html> 

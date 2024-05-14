@@ -21,16 +21,14 @@
     <link rel="stylesheet" href="stylesheets/style.css">
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 </head>
-  
-
 
 <body>
 
     <!--Navigation bar-->
-    <div id="nav-placeholder"></div>
+    <div id="nav"></div>
     <script>
     $(function(){
-      $("#nav-placeholder").load("nav.html");
+      $("#nav").load("nav.html");
     });
     </script>
     <!--end of Navigation bar-->
@@ -212,15 +210,15 @@
             <form class="form">
                 <div class="form-group">
                     <label for="name">Name:</label><br>
-                    <input type="text" id="name" name="name" class="input-text">
+                    <input type="text" id="name" name="name" class="input-text" placeholder="Name">
                 </div>
                 <div class="form-group">
                     <label for="email">Email:</label><br>
-                    <input type="email" id="email" name="email" class="input-text">
+                    <input type="email" id="email" name="email" class="input-text" placeholder="Email">
                 </div>
                 <div class="form-group">
                     <label for="message">Message:</label><br>
-                    <textarea id="message" name="message" class="input-text"></textarea>
+                    <textarea id="message" name="message" class="input-text" placeholder="Message"></textarea>
                 </div>
                 <div class="form-group">
                     <label for="category">Category:</label><br>
@@ -231,6 +229,7 @@
                     </select>
                 </div>
                 <button type="submit" class="primary-button"><i class="fa-solid fa-paper-plane"></i> Send</i></button>
+                <br>
             </form>
           </div>
 
@@ -253,7 +252,6 @@
 
             </a>
         </div>
-
     </div>
 
     <h2 class="center black">...</h2>
@@ -261,22 +259,22 @@
     <div class="center" id="cards">
         <h2 class="primary-2">Cards</h2><br>
         <div class="cards">
-            <div class="card bg-secondary-1">
+            <div class="card bg-secondary-2">
                 <h3>Card number 1</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                 <footer>Card footer</footer>
             </div>
 
-            <div class="card bg-secondary-1">
+            <div class="card bg-secondary-2">
                 <h3>Card number 2</h3>
                 <img src="assets/img/coppa-illustration.jpg">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 <footer>Card footer</footer>
             </div>
 
-            <div class="card bg-secondary-1">
+            <div class="card bg-secondary-2">
                 <h3>Card number 3</h3>
-                <img src="assets/img/coppa-illustration.jpg">
+                <img src="assets/img/coppagabana_banner.webp">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <button class="primary-button">Primary</button>
                 <footer>Card footer</footer>
@@ -290,10 +288,13 @@
         <h2 class="primary-2">That's it!</h2>
     </div>
 
-    <footer>
-        <p>the footer</p>
-        <h2 class="white">Footer</h2>
-        <p>This is the footer</p>
-    </footer>
+    <!--Footer-->
+    <div id="footer"></div>
+    <script>
+    $(function(){
+      $("#footer").load("footer.html");
+    });
+    </script>
+    <!--end of Footer-->
 </body>
 </html> 

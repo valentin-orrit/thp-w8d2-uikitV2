@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">    
+    <title>UI KIT Coppa & Gabana</title>
+    <link rel="icon" type="image/x-icon" href="/assets/icons/favicon-coppagabana.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!--Font h1-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap" rel="stylesheet">
+
+    <!-- Font Everything Else-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="stylesheets/style.css">
+    <script src="https://kit.fontawesome.com/b553ddee60.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+  
+<body>
+
+    <!--Navigation bar-->
+    <div id="nav"></div>
+    <script>
+    $(function(){
+      $("#nav").load("nav.html");
+    });
+    </script>
+    <!--end of Navigation bar-->
+
+    <main>
+        <div class="center">
+            <div class="center" id="menu">
+                <h2 class="primary-2">Sign In Form</h2>
+            </div>
+        </div>
+
+        <div class="center" id="menu">
+            <div class="center bg-secondary-2" id="outer-form">
+                <h1 class="primary-1">Sign In</h1>
+                <form class="form">
+
+                    <div class="form-group">
+                        <label for="email"><i class="fa-solid fa-user"></i></label>
+                        <input type="email" id="email" name="email" class="input-text" placeholder="email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="password"><i class="fa-solid fa-lock"></i></label>
+                        <input type="password" id="name" name="name" class="input-text" placeholder="password">
+                    </div>
+
+                    <div class="form-questions">
+                        <div>
+                            <input type="checkbox" id="remember-me"/>
+                            <label for="remember-me">Remember Me</label>
+                        </div>
+                        <a href="index.html">Forgot Password?</a>
+                    </div>
+                    <br>
+                    
+                    <div>
+                        <p>Do not have an account? <a href="index.html">Signup</a></p>
+                    </div>
+
+                    <button type="submit" class="primary-button">Sign in</button>
+
+                    <h2 class="center black">...or...</h2>
+                    <div class="form-buttons">
+                        <button class="outline outline-primary">Sign in with gmail</button>
+                        <button class="outline outline-primary"> Sign in with twitter </button>
+                    </div>
+                    <br>
+                </form>
+              </div>
+        </div>
+
+        <div class="center"></div>
+    </main>
+
+    <!--Footer-->
+    <div id="footer"></div>
+    <script>
+    $(function(){
+      $("#footer").load("footer.html");
+    });
+    </script>
+    <!--end of Footer-->
+</body>
+</html> 

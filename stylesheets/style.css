@@ -32,6 +32,12 @@ hmtl, body {
 
 a {
   text-decoration: none;
+  font-weight: 300;
+  font-style: large;
+  color: #648837;
+}
+
+a:hover {
   color: #9A1B0F;
 }
 
@@ -90,11 +96,36 @@ nav a {
   padding: 0 1em;
 }
 
+/* hero */
+.hero-image-lg {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),url('../assets/img/coppagabana_banner.webp');
+  height: 17em;
+}
+
+.hero-text-lg {
+  display: flex;
+  flex-direction: column;
+  padding: 3em 20em 0 3em;
+}
+
+.hero-image-sm {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5)),url('../assets/img/coppagabana_banner.webp');
+  height: 9em;
+}
+
+.hero-text-sm {
+  padding: 2em 20em 0 2em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* align-items: end; */
+}
+
 /* footer */
-footer {
+.footer {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content:space-around;
   align-items: center;
   font-family: "Raleway";
   font-weight: 200;
@@ -103,13 +134,36 @@ footer {
   margin-top: auto;
 }
 
+.footer-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+  padding: 0 1em;
+  font-family: "Raleway";
+  font-weight: 200;
+  background-color: #291B16;
+  color: #FFFFF2;
+  margin-top: auto;
+}
+
+.footer-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.icon {
+  padding: 0 .5em;
+}
+
 /* Colors */
 .bg-primary-1 {
   background-color: #9A1B0F;
 }
 
 .bg-primary-2 {
-  background-color: #648837 ;
+  background-color: #648837;
 }
 
 .bg-secondary-1 {
@@ -200,7 +254,6 @@ footer {
 .info {
   background-color: #b9eef5;
 }
-
 
 /* general */
 button {
@@ -337,11 +390,30 @@ button:active {
 .form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: space-evenly;
 }
 
 .form-group {
   margin-bottom: 1.5em;
+}
+
+.form-group i {
+  padding-right: 1em;
+}
+
+.form-questions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.form-buttons button {
+  width: 11em;
+  margin: 0 1em;
 }
 
 .input-text {
@@ -453,10 +525,11 @@ button[type="submit"] {
   max-height: calc(100% - 40px);
 }
 
-.card footer {
-  padding: 0.6em 0em;
-  background-color: #291B16;
+.card footer, .color-card footer {
+  padding: 0.6em 1em;
+  background-color: #648837;
   color: #FFFFF2;
+  font-family: "Raleway", sans-serif;
 }
 
 .card button {
@@ -482,4 +555,9 @@ button[type="submit"] {
   padding: 0.6em 0em;
   background-color: #291B16;
   color: #FFFFF2;
+}
+
+/* menu */
+#menu a button{
+  width: 20em;
 }
