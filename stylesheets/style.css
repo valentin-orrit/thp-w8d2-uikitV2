@@ -267,7 +267,7 @@ button {
   border-radius: 1em;
   font-weight: 600;
   cursor: pointer;
-  border: 1px solid #291B16;
+  border: none;
   box-shadow: 1px 2px 0 0 #291B16;
   transition: all 0.2s ease-in-out;
 }
