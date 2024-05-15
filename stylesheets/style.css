@@ -295,6 +295,7 @@ button:active {
 .outline {
   color: #291B16;
   background-color: #FFFFF2;
+  border: 1px solid #291B16;
 }
 
 .outline-primary {
